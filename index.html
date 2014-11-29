@@ -1,0 +1,173 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>hotel app</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/parrafo.css" />
+    <script src="js/jquery-1.11.1.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
+    
+	
+</head>
+
+<body>
+	
+<div data-role="page" id="home">
+	<div data-role="header"><h1>HotelApp</h1></div>
+    
+	<div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true">
+            <li><a href="#nr1">Nueva Reserva</a></li>
+            <li><a href="#hist">Historial</a></li>
+            <li><a href="#priv">Privacidad</a></li>
+        </ul>
+    
+    </div>
+    
+	<div data-role="footer" data-position="fixed" ><span style="font-size:8pt;"> &copy; Todos los derechos             recervados </span>
+     
+        <a href="#nosotros" data-role="button"  data-transition="slideup">Nosotros</a>       
+    </div>
+</div>
+    
+    <!-- una nueva vista o activity en android  opcion page con data-role  -->
+    
+    <div data-role="page" id="nosotros">
+	<div data-role="header"><h1>Nosotros</h1>
+        <a href="#" data-role="button" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-right">Atrás</a>
+        </div>
+        <div role="main" class="ui-content">
+             
+            <p  style="Text-align:justify;" class="formato"> A listview can be configured to automatically generate dividers for its items by adding a data-autodividers="true" attribute to any listview. By default, the text used to create dividers is the uppercased first letter of the item's text. Alternatively you can specify divider text by setting the autodividersSelector option on the listview programmatically. This feature is designed to work seamlessly with the filter.
+            </p>
+    
+    </div>
+    </div>
+    
+<!-- privacidad nuevo page -->
+    
+    <div data-role="page" id="priv">
+	<div data-role="header"><h1>Privacidad</h1>
+        <a href="#" data-role="button" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-right">Atrás</a>
+        </div>
+        <div role="main" class="ui-content">
+             
+            <p  style="Text-align:justify;" class="formato"> A listview can be configured to automatically generate dividers for its items by adding a data-autodividers="true" attribute to any listview. By default, the text used to create dividers is the uppercased first letter of the item's text. Alternatively you can specify divider text by setting the autodividersSelector option on the listview programmatically. This feature is designed to work seamlessly with the filter.
+            </p>
+    
+    </div>
+    </div>
+    
+    
+    
+    <!-- historial nuevo page -->
+    
+    <div data-role="page" id="hist">
+	<div data-role="header"><h1>Historial</h1>
+        <a href="#" data-role="button" data-rel="back">Atrás</a>
+        </div>
+        <div role="main" class="ui-content">
+
+    </div>
+    </div>
+
+    <!-- page para revisar -->
+    <div data-role="page" id="nr1">
+	<div data-role="header"><h1>Reservar</h1></div>
+        
+	<div role="main" class="ui-content">
+        
+        <ul data-role="listview">
+            <li data-role="list-divider">Tipo de Habitación</li>
+            <li><a href="#" >Sencilla</a></li>
+            <li><a href="#">Doble</a></li>
+            <li><a href="#">Familiar</a></li>
+        </ul>
+        
+        
+        
+        </div>
+        
+        
+	<div data-role="footer" data-position="fixed" >
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active">Siguiente</a></li>
+                <li><a href="#"  data-rel="back">Cancelar</a></li>
+            </ul>
+        </div><!-- /navbar -->
+        
+        </div>
+</div>
+    
+    
+      <!-- page para revisar -->
+    <div data-role="page" id="nr2">
+	<div data-role="header"><h1>Reservar</h1></div>
+        
+	<div role="main" class="ui-content">
+        
+        <ul data-role="listview">
+            <li data-role="list-divider">Datos Extras</li>
+            <li> Personas: 
+                <select id="resP">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select> 
+            
+            </li>
+            <li>
+                  habitaciones:
+                <select id="resH">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select> 
+            
+            </li>
+            <li>
+                Dias: 
+                <select id="resD">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select> 
+            
+            </li>
+            
+            
+        </ul>
+        
+        
+        
+        </div>
+        
+        
+	<div data-role="footer" data-position="fixed" >
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active">Enviar</a></li>
+                <li><a href="#"  data-rel="back">Cancelar</a></li>
+            </ul>
+        </div><!-- /navbar -->
+        
+        </div>
+</div>
+    
+    
+    
+    
+    
+    
+</body>
+</html>
