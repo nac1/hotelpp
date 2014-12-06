@@ -1,11 +1,11 @@
 //creamos un objeto de tipo estandar
 var capture={
     imgTomada:function(imgs){
-        var image='';
+        var images='';
         for(i=0;i<imgs.length;i++)
             images=imgs[i].fullPath;
             
-        $('#regFoto').attr('rel',image); //agregar atributo
+        $('#regFoto').attr('rel',images); //agregar atributo
     },
     
     imgError:function(err){
