@@ -42,12 +42,24 @@ var fn= {
         var nom=$('#regNom').val();
         var tel=$('#regTel').val();
         var mai=$('#regMail').val();
+        var foto=$('#regFoto').attr('rel');
         
-        if(nom !='' && tel != '' && mail !='')
+        if(nom !='' && tel != '' && mail !='' && foto !='' && foto !=undefined)
            {
-         navigator.notification.alert('correcto',null,'felicidades','aceptar');
+               //usar ajax para enviar datos
+         
+               $.ajax({
+                    type: "POST",
+                    url: "http://carlos.igtsoft.com/apps/test.php",
+                    data: { nom: nom, mail: mail,tel:tel }
+                    })
+                    .done(function( msg ) {
+                    alert( "Data Saved: " + msg );
+                    });
+               
+               
            }else{
-         alert('Todos los campos son requeridos');
+         navigator.notification.alert('Todos los campos son requeridos',null,'Lo sentimos','aceptar');
             }
   
         }
