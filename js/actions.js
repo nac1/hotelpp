@@ -28,7 +28,10 @@ var fn= {
 
    init:function(){
         //alert(fn.otro);
-        $('#regSend').click(fn.enviaRegistro);
+        $('#regSend').click(fn.enviaRegistro); //boton de registrar
+        
+        $('#regFoto').click(capture.imgCapture);//boton de foto
+       
        var x=false;
        if(!x)   
        window.location.href='#reg'; //con esto forzamos a que siempre se registre la personae
