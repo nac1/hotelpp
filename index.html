@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
     <link rel="stylesheet" href="css/parrafo.css" />
+    <script src="phonegap.js"></script>
     <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/actions.js"></script>
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
     
     
@@ -164,6 +166,50 @@
         </div>
 </div>
     
+    
+    
+    
+      <!-- registro -->
+    <div data-role="page" id="reg">
+	<div data-role="header"><h1>Registro</h1></div>
+        
+	<div role="main" class="ui-content">
+        
+        <ul data-role="listview">
+            <li data-role="list-divider">Datos Personales</li>
+            <li> Personas: 
+              <input type="text" id="regNom" placeholder="nombre"> 
+            
+            </li>
+            <li>
+            <input type="tel" id="regTel" placeholder="Teléfono">
+            
+            </li>
+            <li>
+              <input type="email" id="regMail" placeholder="Correo Eléctronico">          
+            </li>
+            
+            <li>
+            <a href="#" id="regFoto">Tomar foto</a>
+            </li>
+            
+        </ul>
+        
+        <div id="viePhoto"></div>
+        
+        </div>
+        
+        
+	<div data-role="footer" data-position="fixed" >
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active"  id="regSend">Registrar</a></li>
+        
+            </ul>
+        </div><!-- /navbar -->
+        
+        </div>
+</div>
     
     
     
