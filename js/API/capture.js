@@ -3,9 +3,9 @@ var capture={
     imgTomada:function(imgs){
         var image='';
         for(i=0;i<imgs.length;i++)
-            images=imags[i].fullPath;
+            images=imgs[i].fullPath;
             
-        $('#regFoto')attr('rel',image); //agregar atributo
+        $('#regFoto').attr('rel',image); //agregar atributo
     },
     
     imgError:function(err){
