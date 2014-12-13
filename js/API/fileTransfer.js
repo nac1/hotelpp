@@ -9,6 +9,8 @@ var fileTransfer={ //usando test
                     navigator.notification.beep(1);
                 if(btn==2)//vibrar
                     navigator.vibrate(1000);
+                
+                window.location.href="#home";//ir a inicio
             }
              navigator.notification.confirm('se ha registrado correctamente',acciones,'Felicidades',['Sonido', 'Vibrar','Cancelar']);
         }else{
