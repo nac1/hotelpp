@@ -26,21 +26,22 @@ var fileTransfer={ //usando test
         
     },
     
-    opciones:new FileUploadOptions(),
     
-    ft:new fileTransfer(),
     
     subirFoto:function(){
-    fileTransfer.opciones.filekey='foto'; //nombre del input haciendo referencia
-    fileTransfer.opciones.fileName='carlos'; //nombre del archivo
-    fileTransfer.opciones.mimeType='image/jpeg';
+    
+    var opciones=new FileUploadOptions();
+    var ft= new FileTransfer();
+    opciones.filekey='foto'; //nombre del input haciendo referencia
+    opciones.fileName='carlos'; //nombre del archivo
+    opciones.mimeType='image/jpeg';
         
-    fileTransfer.ft.upload(
+    ft.upload(
         $('#regFoto').attr('rel'),//url del archivo a subir
         'http://carlos.igtsoft.com/apps/test.php',//url del servidor
         fileTransfer.subido, //función en caso de ser satisfactorio
-        fileTransfer.error,//función en caso de error
-        fileTransfer.opciones
+        f|ileTransfer.error,//función en caso de error
+        opciones
     );
         
         
