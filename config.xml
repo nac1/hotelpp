@@ -22,5 +22,7 @@
      <!--agregar la siguiente que es el api de los plugins-->
         <gap:plugin name="org.apache.cordova.dialogs" />
          <gap:plugin name="org.apache.cordova.media-capture" />
+         <gap:plugin name="org.apache.cordova.file-transfer" />
+        <gap:plugin name="org.apache.cordova.vibration" />
 
 </widget>

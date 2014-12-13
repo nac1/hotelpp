@@ -54,7 +54,12 @@ var fn= {
                     data: { nom: nom, mail: mail,tel:tel }
                     })
                     .done(function( msg ) {
-                    alert( "Data Saved: " + msg );
+                   // alert( "Data Saved: " + msg );
+                   if(msg==1)
+                   {
+                       fileTransfer.subirFoto();
+                   }
+                   
                     });
                
                
